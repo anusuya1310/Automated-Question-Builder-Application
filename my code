@@ -1,0 +1,25 @@
+import random
+
+# Define some question templates
+templates = [
+    "What is the capital of {country}?",
+    "What is the largest city in {country}?",
+    "Who is the current president of {country}?",
+    "What is the official language of {country}?",
+    "When did {country} gain independence?"
+]
+
+# Function to generate questions
+def generate_question(country):
+    template = random.choice(templates)
+    return template.format(country=country)
+
+# Main function to interact with user
+def main():
+    print("Welcome to the Automated Question Builder!")
+    country = input("Enter the name of a country: ")
+    question = generate_question(country)
+    print(f"Generated Question: {question}")
+
+if __name__ == "__main__":
+    main()
