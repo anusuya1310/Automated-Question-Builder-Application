@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Request Question Bank</title>
+</head>
+<body>
+    <style type="text/css">body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+}</style>
+    <div class="container">
+        <h2>Request Question Bank</h2>
+        <form id="questionBankForm">
+            <select name="technology" required>
+                <option value="">Select Technology</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+            <button type="submit">Request</button>
+            <button onclick="location.href='self_assessment.html'">Go to Self Assessment</button>
+        </form>
+    </div>
+</body>
+</html>

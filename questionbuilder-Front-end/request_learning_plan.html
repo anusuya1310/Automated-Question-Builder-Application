@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Request Learning Plan</title>
+</head>
+<body>
+    <style type="text/css">body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+}</style>
+    <div class="container">
+        <h2>Request Learning Plan</h2>
+        <form id="learningPlanForm">
+            <select name="technology" required>
+                <option value="">Select Technology</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="Data Science">Data Science</option>
+            </select>
+            <input type="text" name="areas_of_improvement" placeholder="Areas of Improvement" required>
+            <input type="text" name="learning_goals" placeholder="Learning Goals" required>
+            <button type="submit">Request Plan</button>
+        </form>
+    </div>
+</body>
+</html>

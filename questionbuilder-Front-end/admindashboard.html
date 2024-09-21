@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <style type="text/css">body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+}</style>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div class="stats">
+            <p>System Performance: <span id="performance">Good</span></p>
+            <p>Active Users: <span id="activeUsers">100</span></p>
+            <button onclick="location.href='usermanagement.html'">User Management</button>
+            <button onclick="location.href='reportgeneration.html'">Reports</button>
+        </div>
+    </div>
+</body>
+</html>

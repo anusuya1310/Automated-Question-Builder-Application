@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generate Question Bank</title>
+</head>
+<body>
+    <style type="text/css">body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+}
+
+select, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}</style>
+    <div class="container">
+        <h2>Generate Question Bank</h2>
+        <form id="generateQuestionBankForm">
+            <select name="technology" required>
+                <option value="">Select Technology</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+            <div>
+                <label>Select Topics</label>
+                <input type="checkbox" name="topics" value="Basics"> Basics
+                <input type="checkbox" name="topics" value="Advanced"> Advanced
+            </div>
+            <input type="number" name="numQuestions" placeholder="Number of Questions" required>
+            <div>
+                <label>Difficulty Level</label>
+                <input type="range" name="difficulty" min="1" max="5">
+            </div>
+            <button type="submit">Generate</button>
+        </form>
+    </div>
+</body>
+</html>

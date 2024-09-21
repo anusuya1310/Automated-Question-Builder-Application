@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trainer Dashboard</title>
+</head>
+<body>
+    <style type="text/css">body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+}
+
+select, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}</style>
+    <div class="container">
+        <h2>Trainer Dashboard</h2>
+        <div class="quick-links">
+            <button onclick="location.href='upload_curriculum.html'">Upload Curriculum</button>
+            <button onclick="location.href='generate_question_bank.html'">Generate Question Bank</button>
+            <button onclick="location.href='review_question_bank.html'">Review Question Bank</button>
+            <button onclick="location.href='download_question_bank.html'">Download Question Bank</button>
+        </div>
+        <div class="notifications">
+            <h3>Notifications</h3>
+            <ul id="notificationList">
+                <!-- Notifications will be populated here -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
